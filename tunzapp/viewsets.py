@@ -10,7 +10,7 @@ from rest_framework.response import Response
 
 class ChildViewset(viewsets.ModelViewSet):
     queryset = models.Child.objects.all()
-    serializer_class = serializers.ChildSerializer
+    serializer_class = ChildSerializer
  
  
 @api_view(['GET'])

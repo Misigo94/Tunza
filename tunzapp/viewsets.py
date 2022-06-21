@@ -35,3 +35,12 @@ def childDetail(request,pk):
     child = Child.objects.get(id=pk)
     serializer = ChildSerializer(child, many=False)
     return Response(serializer.data)
+
+@api_view(['POST'])
+def childCreate(request):
+    serializer = ChildSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
+
+

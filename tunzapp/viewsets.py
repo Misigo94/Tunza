@@ -5,7 +5,7 @@ from .models import Child
 from .serializers import ChildSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-import request
+
 
 
 class ChildViewset(viewsets.ModelViewSet):
@@ -28,4 +28,10 @@ def apiOverview(request):
 def childList(request):
     child = Child.objects.all()
     serializer = ChildSerializer(child, many=True)
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def childDetail(request,pk):
+    child = Child.objects.get(id=pk)
+    serializer = ChildSerializer(child, many=False)
     return Response(serializer.data)

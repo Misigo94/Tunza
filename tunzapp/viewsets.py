@@ -43,4 +43,13 @@ def childCreate(request):
         serializer.save()
     return Response(serializer.data)
 
+@api_view(['POST'])
+def childUpdate(request, pk):
+    child = Child.objects.get(id=pk)
+    
+    serializer = ChildSerializer(instance=child, data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        
+    return Response(serializer.data)
 

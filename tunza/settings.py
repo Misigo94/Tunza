@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tunzapp',
     'rest_framework',
-    'cloudinary_storage',
+    # 'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
@@ -77,16 +77,14 @@ WSGI_APPLICATION = 'tunza.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tunzadb',
-        'USERNAME': 'tunza',
-        'PASSWORD': '*admin*',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

@@ -12,4 +12,13 @@ class ChildViewset(viewsets.ModelViewSet):
     serializer_class = serializers.ChildSerializer
  
  
-
+@api_view(['GET'])
+def apiOverview(request):
+    api_urls = {
+        'List':'/child-list/',
+        'Detail View': '/child-detail/<str:pk>/',
+        'Create': '/child-create/',
+        'Update': '/childt-update/<str:pk>/',
+        'Delete': '/child-delete/<str:pk>/',
+    }
+    return Response(api_urls)

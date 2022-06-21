@@ -3,3 +3,4 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('child', ChildViewset)
+router.register('child-detail', ChildViewset)

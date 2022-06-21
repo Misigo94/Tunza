@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tunzapp',
     'rest_framework',
     'cloudinary_storage',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +128,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 # DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
@@ -140,3 +142,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     'API_KEY': config(""),
 #     'API_SECRET': config(""),
 # }
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': "dpkrfq3vr",
+    'API_KEY': "942357365678392",
+    'API_SECRET': "-878Puk1KQ33Q4pva2Id0D6xUCo",
+}

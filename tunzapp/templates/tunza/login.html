@@ -1,0 +1,48 @@
+{% extends 'tunza/base.html' %} {% block content %}
+
+<div class="container">
+  <div class="login-text">
+    <h1>login here...</h1>
+  </div>
+
+  <!--login form start--> 
+  <form method="POST" action="">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="InputUsername" class="form-label">User name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="username"
+        id="InputUsername"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="InputPassword" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="Password"
+        name="password"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary" name="Login User">
+      login
+    </button>
+  </form>
+
+  {% for message in messages %}
+  <p id="message">{{message}}</p>
+  {% endfor %}
+
+  <div class="border-top pt-3 mt-2">
+    <small class="text-muted">
+      Dont have an account ?
+      <a class="ml-2" href="{% url 'signup' %}">Register</a>
+    </small>
+  </div>
+</div>
+
+{% endblock %}

@@ -53,3 +53,9 @@ def childUpdate(request, pk):
         
     return Response(serializer.data)
 
+@api_view(['DELETE'])
+def childDelete(request, pk):
+    child = Child.objects.get(id=pk)
+    child.delete
+    
+    return Response('Item Successfully Deleted')

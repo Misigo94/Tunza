@@ -1,6 +1,7 @@
 from tunzapp import views
 from django.urls import path
 from .views import *
+from .viewsets import views
 
 urlpatterns=[
     path('',views.apiOverview, name='api-overview'),

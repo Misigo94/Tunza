@@ -58,6 +58,7 @@ def login_page(request):
 
 #view function for about section:To be done by Oliver
 def about(request):
+    
     return render(request, 'tunzapp/about.html')
 
 #view function for specific details for the child:Ludwig

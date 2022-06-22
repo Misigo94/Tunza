@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.auth li a{
+    color: #F7E714 ;
+    border: 2px solid #F7E714;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 80px;
+    
+}
+.auth li a:hover{
+    color: white;
+}
+.auth{
+    position: relative;
+    right: -10%;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    color: white;
+    position: relative;
+    left:10%;
+    margin-top: 100px;
+}
+
+.top{
+    font-size: 38px;
+    font-weight: 400;
+}
+.left p:nth-child(2){
+    color: black;
+    background-color: #F7E714;
+    width:130px;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.right{
+    position: relative;
+}
+
+
+.firstImage{
+    height: 350px;
+    margin-right: 100px;
+    width: 320px;
+    object-fit: cover;
+    border:2px solid #F7E714;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    
+}
+.secondImage{
+    height: 290px;
+    width: 290px;
+    object-fit: cover;
+    border:2px solid #F7E714;
+    position: absolute;
+    left: -50%;
+    bottom: -3%;
+    border-radius: 10px;
+
+}
+
+.workcards,.supportcard{
+    display: flex;
+    justify-content: space-around;
+}
+.supportcard{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.works h3{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.support h3{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details {
+    color: #F7E714;
+    margin-bottom: 7px;
+}
+.details span{
+    color: white;
+}
+.view{
+    position: relative;
+    left:45%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+ .single {
+max-width: 650px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+z-index: 2;
+ }
+ .single h2 {
+font-size: 22px;
+color: #F7E714;
+text-transform: uppercase;
+margin-bottom: 40px;
+margin-top: 30px;
+ }
+
+ .single .form-control {
+height: 50px;
+width: 300px;
+background: white;
+border-color: transparent;
+border-radius: 20px 0 0 20px; 
+}
+ .single .form-control:focus {
+box-shadow: none;
+border-color: #243c4f; 
+}
+ .single .btn {
+min-height: 50px; 
+border-radius: 0 20px 20px 0;
+background:#F7E714;
+color: #fff;
+
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    margin-top: 50px;
+    color: #fff;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+
+

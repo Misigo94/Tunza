@@ -1,5 +1,4 @@
 
-from multiprocessing import context
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login , logout
 from django.contrib.auth.decorators import login_required
@@ -8,7 +7,6 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.shortcuts import redirect
 from .models import *
-from .models import Child
 
 # Create your views here.
 #View function for home: To be done by Julia
@@ -62,12 +60,8 @@ def about(request):
     return render(request, 'tunzapp/about.html')
 
 #view function for specific details for the child:Ludwig
-def details(request, pk):
-    child = Child.objects.get(id=pk)
-    # financial = FinancialNeed.objects.filter()
-    context= {'child':child }
-    print(child)
-    return render(request, 'tunzapp/details.html',context)
+def details(request):
+    return render(request, 'tunzapp/details.html')
 
 #view function for the list of children :To be done by Nimrod
 def list(request):

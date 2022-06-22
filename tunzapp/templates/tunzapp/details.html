@@ -2,8 +2,61 @@
 
 {% block content %}
 
-
-<h2>This is the details page to display the specific details of a child</h2>/
+    <div class="container-fluid detail">
+        <div class="heading " style="padding-top: 25vh;">
+            <h1>{{ child.full_name }}</h1>
+        </div>
+        <div class="container" style="padding:10vh;">
+            <div class="card mb-4" style="max-width: 700px;">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img class="img-thumbnail" src="{{child.image.url}}" alt="image of a needy child who needs your help" style="height: 340px; width: 280px" class="img-fluid rounded-start">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Full Name : {{ child.full_name }}</li>
+                            <li class="list-group-item">Gender : {{ child.gender }}</li>
+                            <li class="list-group-item">Age : {{child.age }}</li>
+                            <li class="list-group-item">Family Members : {{child.family_members}}</li>
+                            <li class="list-group-item">Class / form : {{obje.class_overall}}</li>
+                            <li class="list-group-item">School : {{child.school}}</li>
+                            <li class="list-group-item">Academic Performance : {{child.school_grade}}</li>
+                            <li class="list-group-item">Dreams : {{ child.dreams}}</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div style="padding-top: 10vh;">
+                <div class="card "style=";">
+                    <div class="row d-flex p-2 mx-md-n5">
+                        <div class="col px-md-5">
+                            <h2>Areas of need </h2>
+        
+                        </div>
+                        <div class="col px-md-5">
+                            <div><h3>TOTAL STANDING </h3></div>
+                            <div><h3>KSH</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" text-center " style="padding-top: 5vh; ">
+                <button class="btn btn-success btn-lg rounded-pill"  type="submit"><h2 class="support">SUPPORT</h2></button>
+            </div>
+        </div>
+        <footer class="container-fluid">
+            <div style="display: flex;">
+                <h5>Tearms & Condition</h5>
+                <h5 style="margin:0 10px">Privacy Policy</h5>
+                <h5>About</h5>
+            </div>
+            <h5 style="color: #F7E714">Copyright2022Tunza.All Rights Reserved</h5>
+        </footer>
+    
+    </div>
+    
 
 
 

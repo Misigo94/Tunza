@@ -134,7 +134,7 @@
 }
 
 .detail{
-    background-image: url(../images/Screen-Shot-2017-06-13-at-10.02.48-1-e1524631649260.png);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../images/Screen-Shot-2017-06-13-at-10.02.48-1-e1524631649260.png);
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;

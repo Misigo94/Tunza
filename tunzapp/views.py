@@ -61,10 +61,10 @@ def about(request):
     return render(request, 'tunzapp/about.html')
 
 #view function for specific details for the child:Ludwig
-def details(request):
-    child = Child.objects.all()
+def details(request, pk):
+    child = Child.objects.get(id=pk)
     # financial = FinancialNeed.objects.filter()
-    context= {'child':child, 'financial':financial }
+    context= {'child':child }
     print(child)
     return render(request, 'tunzapp/details.html',context)
 

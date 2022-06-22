@@ -132,3 +132,29 @@
 .logs input:focus{
     color: #ffffff;
 }
+
+.detail{
+    background-image: url(../images/Screen-Shot-2017-06-13-at-10.02.48-1-e1524631649260.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height:25vh;
+}
+.row1{
+    display:flex;
+    margin: auto;
+    align-items: center;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    margin-top: 50px;
+    color: #fff;
+    align-items: center;
+    font-size: 13px;
+    width: 100%;
+}

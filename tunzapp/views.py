@@ -7,12 +7,25 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.shortcuts import redirect
 from .models import *
+import requests
+from rest_framework import generics
+from .serializers import ChildSerializer
 
 # Create your views here.
 #View function for home: To be done by Julia
 def home(request):
     '''view for home'''
-    return render(request, 'tunzapp/home.html')
+    # child_list_api = requests.get('http://127.0.0.1:8000/api/child/').json()
+    queryset = Child.objects.all().order_by('-full_name')
+    return render(request, 'tunzapp/home.html', {'queryset': queryset})
+
+class ChildList(generics.ListCreateAPIView):
+    queryset = Child.objects.all()
+    serializer_class = ChildSerializer
+
+class ChildDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Child.objects.all()
+    serializer_class = ChildSerializer
 
 
 #view function for registration: Done by Andre/Oliver

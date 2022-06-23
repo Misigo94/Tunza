@@ -1,6 +1,7 @@
 from tunzapp import views
 from django.urls import path
 from .views import *
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns=[
     path('', views.home, name='home'),
@@ -10,4 +11,6 @@ urlpatterns=[
     path('about/', views.about, name='about'),
     path('details/', views.details, name='details'),
     path('list/', views.list, name='list'),
+    path('api/child-list', views.ChildList.as_view()),
+    path('api/child-detail/<int:pk>/', views.ChildDetail.as_view()),
 ]

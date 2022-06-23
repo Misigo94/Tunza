@@ -17,7 +17,7 @@ class Profile(models.Model):
     
     
 class FinancialNeed(models.Model):
-    needs = models.CharField(max_length=50, unique=True)
+    needs = models.CharField(max_length=50)
 
     def __str__(self):
         return self.needs

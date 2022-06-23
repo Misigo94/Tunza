@@ -12,6 +12,10 @@
     margin: auto;
     align-items: center;
 }
+.heading{
+    margin-left: 92%;
+    color: #fff;
+}
 footer{
     background-color: black;
     display: flex;

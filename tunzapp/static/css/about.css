@@ -1,0 +1,105 @@
+#aboutimg{
+    height: 228px;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("https://raw.githubusercontent.com/Misigo94/Tunza/master/tunzapp/static/images/Screen-Shot-2017-06-13-at-10.02.48-1-e1524631649260.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+
+    
+    background-size: cover;
+    
+}
+.about-text{
+    position: absolute;
+width: 162px;
+height: 44px;
+left: 70rem;
+top: 150px;
+    
+}
+.about-text h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+
+} 
+.hero-text{
+    position: absolute;
+    width: 628px;
+    height: 600px;
+    left: 127px;
+    top: 400px;
+    
+}
+.hero-text2{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 629px;
+    height: 750px;
+    left: 789px;
+    top: 365px;
+    
+    background-image: url("https://raw.githubusercontent.com/Misigo94/Tunza/master/tunzapp/static/images/388-3889023_map-of-kenya-png-map-of-kenya-transparent.png");
+    border: 1px solid #000000;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-position: top;
+}
+.hero-section{
+    
+    height: 58rem;
+}
+.about-para{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+
+    color: #000000;
+}
+.img1{
+    position: absolute;
+    width: 189px;
+    height: 189px;
+    left: 240px;
+    top: 190px;
+
+    background-image: url("https://raw.githubusercontent.com/Misigo94/Tunza/master/tunzapp/static/images/16109238289_b8e49285ab_h.jpg");
+    background-size: cover;
+    border-radius: 100px;
+    background-position: center;
+}
+.img2{
+    position: absolute;
+    width: 139px;
+    height: 139px;
+    left: 60px;
+    top: 355px;
+
+    background: url("https://raw.githubusercontent.com/Misigo94/Tunza/master/tunzapp/static/images/8203372110_7df8d7f165_b.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+}
+.img3{
+    position: absolute;
+    width: 139px;
+    height: 139px;
+    left: 300px;
+    top: 420px;
+
+    background: url("https://raw.githubusercontent.com/Misigo94/Tunza/master/tunzapp/static/images/download.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+}
+

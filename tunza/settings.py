@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tunzapp',
     'rest_framework',
-    # 'cloudinary_storage',
+    'cloudinary_storage',
 ]
 
 MIDDLEWARE = [
